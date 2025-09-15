@@ -1,8 +1,8 @@
-def _calculate_wdema(self, prices: list[float]) -> float:
+def _calculate_wdema(prices: list[float]) -> float:
         """Calculate Weighted Double Exponential Moving Average на основе минутных цен"""
         if not prices:
             return 0.0
-        
+
         n = len(prices)
         alpha = 2.0 / (n + 1)
         

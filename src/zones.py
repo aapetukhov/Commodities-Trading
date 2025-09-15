@@ -1,6 +1,6 @@
 from decimal import Decimal
 
-def calculate_sigma_zone(self, last_window_values: list[float], sigma_low: int, sigma_high: int):
+def calculate_sigma_zone(last_window_values: list[float], sigma_low: int, sigma_high: int):
     N = Decimal(len(last_window_values))
     weights = [Decimal(i + 1) for i in range(len(last_window_values))]
     total_weight = sum(weights)
